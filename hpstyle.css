@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: rgb(249, 213, 219);
+    border: 2px solid rgb(234, 69, 96);
+    height: 70px;
+    margin: 3px 3px;
+}
+#logo {
+    margin: 10px 10px;
+}
+
+#logo img {
+    height: 60px;
+    width: 60px;
+    padding: 10px 10px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3em;
+}
+
+#navbar ul li a {
+    /* when i gave padding in ul li it gave a problem */
+    padding: 10px 10px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 10px;
+}
+
+.footer {
+    padding: 100px 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-container {
+    /* color:white; */
+    /* background-color: burlywood; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 150px 0px 0px 0px;
+}
+
+.bottom-container h3 {
+    font-size: 30px;
+}
+
+.bottom-container p {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.image {
+    padding-top:20px;
+    padding: 20px 20px 20px 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.footbar {
+    color: black;
+    background-color: rgb(249, 213, 219);
+    border: 2px solid rgb(234, 69, 96);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* text-align: center; */
+    margin-bottom: 0px auto 0px auto;
+    margin:3px;
+}
+.footbar p{
+    font-size: 1.2em;
+    padding:10px 10px;
+}
