@@ -1,0 +1,356 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    margin:0;padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+header {
+       position:fixed;
+       top: 0; left: 0; right: 0;
+       background-color:#d87093;
+       box-shadow: 0px 7%;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       z-index: 1000;
+}
+   
+.logo img{
+    height:70px;
+    margin-right: 10px;
+ 
+}
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size: 20px;
+    padding:20px;
+    color:black;
+    display:block;
+}
+header .navbar ul li a:hover{
+    background:white;
+    color:chartreuse;
+}
+header .navbar ul li ul{
+    position:absolute;
+    left: 0;
+    width:200px;
+    background: palevioletred;
+    display: none;
+}
+header .navbar ul li ul li{
+    width:100%;
+    border-top: 1px solid chartreuse;
+}
+header .navbar ul li:hover >ul{
+    display: initial;
+}
+
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size: 20px;
+    color:black;
+    cursor:pointer;
+    display: none;
+}
+.home{
+    margin-top: 7rem;
+}
+.home .row{
+    display:flex;
+    align-items: center;
+    flex-wrap:wrap;
+    gap:1.5rem;
+}
+
+.home .row .content{
+    flex:1 1 30rem;
+    text-align: center;
+}
+.home .row .content h1{
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    color:green;
+
+}
+.home .row .content h1 span{
+    color:crimson;
+}
+.home .row .content h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:rebeccapurple;
+   
+}
+
+.container{
+    margin-top: 5rem;
+    position:relative;
+    width:100%;
+    height:100vh;
+    animation:animate 20s linear infinite; 
+}
+.container .slider{
+    position:absolute;
+    top:0;
+    left:0;
+    width:500%;
+    height:100%;
+    float:left;
+}
+.container .slider .slide{
+    position:relative;
+    width:20%;
+    height:100%;
+    float:left;
+}
+
+.container .slider .slide .caption{
+position:absolute;
+top:60px;
+left:60px;
+right:60px;
+padding:30px;
+background:rgba(0, 0, 0, 0.5);
+box-sizing:border-box;
+transition:0.5s;
+
+}
+
+.container .slider .slide .caption h4{
+    margin:0;
+    padding:0;
+    color:#fff;
+    font-size: 20px;
+    transition:0.5s;
+}
+.container .slider .slide.slide1{
+    background: url(image/image1.jpg);
+    background-size:contain;
+    background-position: center;
+}
+
+.container .slider .slide.slide2{
+    background: url(image/image2.jpg);
+    background-size:contain;
+    background-position: center;
+
+}
+.container .slider .slide.slide3{
+    background: url(image/image3.jpg);
+    background-size:contain;
+    background-position: center;
+}
+.container .slider .slide.slide4{
+    background: url(image/image4.jpg);
+    background-size:contain;
+    background-position: center;
+}
+.container .slider .slide.slide5{
+    background: url(image/image5.jpg);
+    background-size:contain;
+    background-position: center;
+}
+
+.About{
+    margin-top: 5rem;
+    display:inline-block;
+}
+.About .info{
+display:flex;
+    align-items: center;
+    flex-wrap:wrap;
+    gap:1.5rem;
+}
+.About .info .para{
+    flex:1 1 30rem;
+    text-align: center;
+}
+.About .info .para h2{
+    margin:100px;
+margin-bottom: 1rem;
+    font-size: 3rem;
+    color:black;
+}
+
+.About .info .para p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:1rem;
+    font-size:20px;
+    word-spacing:2px;
+    padding:3% 10%;
+}
+
+#footer{
+    text-align: center;
+    padding:5% 10%;
+    background-color:palevioletred;
+    margin-top: 5rem;
+}
+
+.footer-icon{
+    margin:5% 3% 5% 0;
+} 
+.footer-iconbox{
+    padding-top: 3rem;
+    padding-left: 40px;
+}
+
+
+.schedule{
+    margin-top: 5rem;
+}
+.schedule .time{
+display:flex;
+    align-items: center;
+    flex-wrap:wrap;
+    gap:1.5rem;
+}
+.schedule .time .dates{
+flex:1 1 30rem;
+    text-align: center;}
+
+.schedule .time .dates h2{
+    margin:100px;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color:black;
+    
+    }
+    .schedule .time .dates h3{
+        font-size:1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .schedule .time .dates p{
+        font-size: 1rem;
+    }
+
+@keyframes animate{
+    
+    0%{left:0;}
+    20%{left:0;}
+    25%{left:-100%;}
+    45%{left:-100%;}
+    50%{left:-200%;}
+    70%{left:-200%;}
+    75%{left:-300%;}
+    95%{left:-300%;}
+    100%{left:-400%;}
+
+}
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+    
+    header{
+        padding:20px;
+    }
+    header label{
+        display:initial;
+    }
+    header .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        background: palevioletred;
+        border-top: 1px solid chartreuse;
+        display:none;
+    }
+    header .navbar ul li{
+        width:100%;
+    }
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    header .navbar ul li ul li{
+      background:palevioletred;
+    }
+    #menu-bar:checked ~ .navbar{
+        display:initial;
+    }
+    .home .row .content h1{
+        font-size: 4rem;
+    }
+    .About .info .para h2{
+        font-size:2rem;
+    }
+
+    .About .info .para p{
+        font-size:15px;
+    }
+    .schedule .time .dates h2{
+        font-size:2rem;
+    }
+    .schedule .time .dates h3{
+        font-size:20px;
+
+    }
+    .schedule .time .dates p{
+        font-size:15px;
+    }
+
+
+    .container .slider .slide .caption{
+        position:absolute;
+        top:20px;
+        left:20px;
+        right:20px;
+        padding:20px;
+        }
+        
+        .container .slider .slide .caption h4{
+            font-size: 16px;
+        }
+
+        .container .slider .slide.slide1{
+            
+            background-size:cover;
+
+        }
+        
+        .container .slider .slide.slide2{
+
+            background-size:cover;
+        
+        }
+        .container .slider .slide.slide3{
+           
+            background-size:cover;
+           
+        }
+        .container .slider .slide.slide4{
+           
+            background-size:cover;
+           
+        }
+        .container .slider .slide.slide5{
+            
+            background-size:cover;
+           
+            
+           
+        }
+        
+}
