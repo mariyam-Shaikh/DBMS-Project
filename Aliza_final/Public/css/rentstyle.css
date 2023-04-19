@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform:capitalize;
+}
+body{
+    background-image: url("image/shop3.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed ;
+    
+    
+    /* justify-content: center;
+    align-items: center; */
+     
+
+}
+
+header {
+    
+    position:fixed;
+    top: 0; left: 0; right: 0;
+    background-color:#d87093;
+    box-shadow: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo img{
+ height:70px;
+ margin-right: 10px;
+
+}
+header .navbar ul{
+ list-style: none;
+}
+header .navbar ul li{
+ position: relative;
+ float: left;
+}
+header .navbar ul li a{
+ font-size: 20px;
+ padding:20px;
+ color:black;
+ display:block;
+}
+header .navbar ul li a:hover{
+ background:white;
+ color:chartreuse;
+}
+header .navbar ul li ul{
+ position:absolute;
+ left: 0;
+ width:200px;
+ background: palevioletred;
+ display: none;
+}
+header .navbar ul li ul li{
+ width:100%;
+ border-top: 1px solid chartreuse;
+}
+header .navbar ul li:hover >ul{
+ display: initial;
+}
+
+#menu-bar{
+ display: none;
+}
+header label{
+ font-size: 20px;
+ color:black;
+ cursor:pointer;
+ display: none;
+}
+.outbox{
+    margin-top: 7rem;
+}
+.cost,.size,.mydates{
+    padding: 30px;
+}
+
+.container{
+    background-color: beige;
+    height: 155vh;
+    width: 55vw;
+    padding: 11px;
+    margin:auto;
+    border: 2px solid beige;
+    border-radius: 8px;
+    
+}
+
+.container h2{
+     font-size: 24px;
+     line-height: 24px;
+     padding: 30 px;
+     text-align: center;
+}
+.renterdetails{
+    width:90%;
+    position: relative;
+    margin: 20px auto;
+    line-height:5vh ;
+}
+.dates{
+    
+    padding:5vh;
+}
+.start{
+    margin-right: 5vh;
+    width:45%;
+    cursor: pointer;
+    border: 1px solid palevioletred;
+    
+}
+.end{
+    width:45%;
+    cursor: pointer;
+    border: 1px solid palevioletred;
+}
+.input{
+    width: 100%;
+
+}
+.input:hover{
+    background-color: pink;
+}
+.input:focus{
+    border: 1px solid  ;
+}
+.shop{
+    width:90%;
+    position: relative;
+    margin: 20px auto;
+    line-height: 5vh;
+   
+
+}
+.s2{
+    margin-right: 10vh;
+    width: 100%;
+    
+}
+.s1{
+    margin-right: 18vh;
+    width:15vw;
+}
+.c1,.c2{
+    margin-right: 44px;
+}
+textarea{
+    width: 100%;
+    height:10vh;
+
+}
+.country{
+    display: inline-block;
+    width: 100%;
+    height: 5vh;
+    cursor: pointer;
+    border: 1px solid palevioletred;
+}
+.check{
+    cursor: pointer;
+}
+.button{
+    border-radius:15px;
+    border-color:rgb(240, 95, 185);
+    background-color: rgb(246, 190, 251);
+    width: 25%;
+    cursor: pointer;
+    
+    
+
+}
+.shopbrief{
+    padding: 3px;
+}
+@media (max-width:480px) {
+    header{
+        padding:20px;
+    }
+    header label{
+        display:initial;
+    }
+    header .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        background: palevioletred;
+        border-top: 1px solid chartreuse;
+        display:none;
+    }
+    header .navbar ul li{
+        width:100%;
+    }
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    header .navbar ul li ul li{
+      background:palevioletred;
+    }
+    #menu-bar:checked ~ .navbar{
+        display:initial;
+    }
+    .container{
+        width: 100%;
+    }
+    .dates{
+        width: 100%;
+    }
+    
+    .renterdetails{
+        line-height: 2vh;
+
+    }
+    .dates{
+    
+        padding:3vh;
+    }
+
+    
+}
