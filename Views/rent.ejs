@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENT A SHOP</title>
+    <link rel="stylesheet" href="css/rentstyle.css">
+    <link rel="stylesheet" href="css/dbms.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="image/logo1.png" alt="logo">
+        </div>
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar">Menu</label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="ticketform.html">Tickets</a></li>
+                <!-- <li><a href="https://www.google.com">Rides</a></li> -->
+                <!-- <li><a href="https://www.google.com">Explore</a>
+                    <ul>
+                        <li><a href="https://www.google.com">Map</a></li>
+                        <li><a href="help.html">Help ?</a></li>   
+                    </ul>
+                </li>       -->
+            </ul>
+        </nav>
+    </header>
+    <div class="outbox">
+    <div class="container">
+        <div class="form">
+            <h2>
+                RENT A SHOP 
+            </h2>
+            <form action="backend.php"></form>
+            <div class="renterdetails">
+            <label for="name">Name:</label>
+            <div>
+                <input type="text" name="myname" id="name" placeholder="Enter your name" class="input" required>
+            </div>
+            <label for="email">Email:</label>
+            <div >
+              <input type="email" name="myemail" id="email" placeholder="Enter your email" class="input" required>
+            </div>
+            <label for="add"> Address:</label>
+            <div >
+                 <input type="text" name="myaddress" id="add" placeholder="Enter your address"class="input" required>
+            </div>
+            <label for="con"> Contact:</label>
+            <div >
+                <input type="text" name="mycontact" id="con" placeholder="Enter your phone number" class="input"required>
+            </div>
+            <label for="li"> License number:</label>
+            <div >
+                <input type="text" name="mylicense" id="li" placeholder="Enter your license number" class="input"required>
+            </div>
+            </div>
+            <span class="mydates">Renting dates </span>
+            <div class="dates">
+              <select name="mystart" class="start" required>
+                <option value="choose">-----Starting Date-----</option>
+                <option value="first">20-09-2023</option>
+                <option value="second">21-09-2023</option>
+                <option value="third">22-09-2023</option>
+              </select>
+              <select name="myend" class="end"required >
+                <option value="choose">-----Ending Date-----</option>
+                <option value="first">20-09-2023</option>
+                <option value="second">21-09-2023</option>
+                <option value="third">22-09-2023</option>
+              </select>
+            </div>
+            <span class="cost">Cost of renting a shop: &#x20B9 60,000/day + Security deposit.</span>
+            <span class="size">Size of Shop: 15' X 10'</span>
+            <div class="shop">
+            <div >
+                 No. of shops rented:<input type="number" name="myshops" class="s1" required >
+                 
+            </div>
+            <div>
+                Shop name: <input type="text" name="myshopname" placeholder="Enter shop name" class="s2" >
+            </div>
+            <div>
+                Type of shop:  
+            </div> 
+            <div >
+                Clothing and Accessories <input type="radio" name="mytype" class="c1" >   Food<input type="radio" name="mytype" class="c2">    Gaming<input type="radio" name="mytype" class="c3">
+            </div>
+            <div>
+                <label for="state">State and Union Territories:</label>
+                <select name="mystate" id="state" class="country">
+                    <option value="choose">-----Choose option-----</option>
+                    <option value="AP">Andra Pradesh</option>
+                    <option value="AR">Arunachal Pradesh</option>
+                    <option value="AS">Assam</option>
+                    <option value="BH">Bihar</option>
+                    <option value="CA">Chattisgarh</option>
+                    <option value="GA">Goa</option>
+                    <option value="GJ">Gujarat</option>
+                    <option value="HR">Haryana</option>
+                    <option value="HP">Himachal Pradesh</option>
+                    <option value="JA">Jharkhand</option>
+                    <option value="KR">Karnataka</option>
+                    <option value="KL">Kerala</option>
+                    <option value="MP">Madhya Pradesh</option>
+                    <option value="MH">Maharashtra</option>
+                    <option value="MN">Manipur</option>
+                    <option value="MG">Meghalaya</option>
+                    <option value="MZ">Mizoram</option>
+                    <option value="NG">Nagaland</option>
+                    <option value="OD">Odisha</option>
+                    <option value="PN">Punjab</option>
+                    <option value="RJ">Rajasthan</option>
+                    <option value="SK">Sikkim</option>
+                    <option value="TN">Tamil Nadu</option>
+                    <option value="TL">Telangana</option>
+                    <option value="TR">Tripura</option>
+                    <option value="UT">Uttarakhand</option>
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="AP">West Bengal</option>
+                    <option value="AN">Andaman and Nicobar Islands</option>
+                    <option value="DD">Dadra and Nagar Haveli and Daman and Diu</option>
+                    <option value="DL">Delhi</option>
+                    <option value="JK">Jammu and Kashmir</option>
+                    <option value="LK">Lakshadweep</option>
+                    <option value="PD">Puducherry</option>
+                    
+                    
+        
+                </select>
+        
+            </div>
+            <span class="shopbrief">Write about your shop briefly:</span>
+            <div>
+              <textarea name="mytext" cols="30" rows="10"></textarea>
+            </div>
+            </div>
+            <div>
+            Have you read privacy and policy?:<input type="checkbox" name="myprivacy" class="check">
+            </div>
+        
+            <div>
+                <input type="submit" value="Submit Now" class="button">
+            </div>       
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
