@@ -31,4 +31,8 @@ router.get("/login", function (req, res) {
     res.render("login", {error : req.flash('error'), success : req.flash('success')})
 });
 
+router.get("/shop", function (req, res) {
+    res.render("shop");
+});
+
 module.exports = router;
