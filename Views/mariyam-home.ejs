@@ -43,8 +43,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Tickets</a>
                                 <!-- Button trigger modal -->
-
-                                <!-- Modal -->
                                 <div class="modal fade" id="exampleModal"  tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
@@ -165,6 +163,9 @@
         </div>
     </section>
     <script>
+        if (error.length>0) {
+            document.findElementById ("#exampleModal").style.display='block';
+        }
         let error_message = $('.error_message');
             if (error_message.length > 0) {
                 setTimeout(function () {
