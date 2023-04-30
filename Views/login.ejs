@@ -38,32 +38,32 @@
     </section>
 
     <section id="login-form">
-    <% if(error.length>0) { %>
-        <div class="alert alert-danger message"> 
-            <!-- bootstrap class -->
-            <%= error %>
-        </div>
-        <% } %>
-    <% if(success.length>0) { %>
-        <div class="alert alert-success message">
+        % if(error.length>0) { %>
+            <div class="alert alert-danger message"> 
                 <!-- bootstrap class -->
-            <%= success %>
-        </div>
-        <% } %>
+                <%= error %>
+            </div>
+            <% } %>
+            <% if(success.length>0) { %>
+            <div class="alert alert-success message">
+                    <!-- bootstrap class -->
+                <%= success %>
+            </div>
+            <% } %>
         <h1>LOGIN</h1>
         <<form class="login-form-content" action="/public/login" method="POST">>
-                  <div class="col-12">
-                    <label for="inputEmail" class="form-label">Email</label>
-                    <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
-                  </div>
-                  <div class="col-12">
-                    <label for="inputPassword" class="form-label">Password</label>
-                    <input type="password" name="password" class="form-control" id="inputPassword" placeholder="password">
-                  </div>
-                 
-                  <div class="col-12">
-                    <button type="submit" class="btn btn-secondary "><a class="signupbtn">Login</a></button>
-                  </div>
+            <div class="col-12">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="col-12">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" id="inputPassword" placeholder="password">
+            </div>
+            
+            <div class="col-12">
+            <button type="submit" class="btn btn-secondary "><a class="signupbtn">Login</a></button>
+            </div>
           </form>
     </section>
     <script>
