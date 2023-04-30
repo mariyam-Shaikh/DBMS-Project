@@ -36,7 +36,7 @@
                                 <a class="nav-link" href="#">About Us</a>
                             </li> -->
                             <li class="nav-item">
-                                <a class="nav-link" href="#exampleModal" data-bs-toggle="modal">Buy a ticket</a>
+                                <a class="nav-link" href="/ticketform" data-bs-toggle="modal">Buy a ticket</a>
                                 <div class="modal fade" id="exampleModal" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
@@ -47,7 +47,7 @@
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                <form class="signup-form-content" action="/public" method="POST">
+                                                <form class="signup-form-content" action="/public/login" method="POST">
 
                                                     
                                                     <div class="mb-3">
@@ -152,7 +152,7 @@
                                 </div>
                             <li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Rent Shop</a>
+                                <a class="nav-link" href="/shop">Rent Shop</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Explore</a>
@@ -217,11 +217,11 @@
                     </div>
                     <div class="col-md-4">
                         <label for="inputAge" class="form-label">Age</label>
-                        <input type="date" name="date" class="form-control" id="inputAge">
+                        <input type="date" name="Age" class="form-control" id="inputAge">
                     </div>
                     <div class="col-4">
                         <label for="inputGender" class="form-label">Gender</label>
-                        <select id="inputGender" name="gender" class="form-select">
+                        <select id="inputGender" name="Gender" class="form-select">
                             <option selected>Choose...</option>
                             <option>Male</option>
                             <option>Female</option>
@@ -238,7 +238,7 @@
                     </div>
                     <div class="col-4">
                         <label for="inputDate" class="form-label">Date of Visit</label>
-                        <select id="inputDate" name="date_visit" class="form-select">
+                        <select id="inputDate" name="date" class="form-select">
                             <option selected>Choose...</option>
                             <option>01-05-2023</option>
                             <option>02-05-2023</option>
